@@ -35,3 +35,8 @@ What is one file that should stay out of Git for this project, and why?
     The .exe, because of how large it is.
     I also just asked AI this one. (Again, I'm learning how to use AI as well.)
     It also said the .exe, yet because it can be recreated at any time. I was correct in that it also said to avoid bloat.
+
+Pastes:
+"Add each of the files"
+"AI answers in cafe_register.txt"
+"Pastes in cafe_register.txt"
