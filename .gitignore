@@ -1,0 +1,5 @@
+*.o
+*.exe
+a.out
+# It's cafe.exe in this case, yet line 2 will catch that.
+cafe

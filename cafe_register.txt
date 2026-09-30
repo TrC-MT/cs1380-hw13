@@ -1,0 +1,33 @@
+After preview_discount(price, 10), why is price unchanged? 
+    Because I am not assigning a new value to the price_cents variable.
+    I'm using a local variable.
+
+What must main pass so apply_discount can change it?
+    main must pass the value of the price_cents pointer and a percent off.
+
+Why does charge return an error code and write through new_balance, 
+instead of only printing inside charge?
+    Because it is defined in cafe.c, which needs to send the error code to main to show it as the interface.
+    It's a scope thing.
+
+
+What should main do when make_change returns false?
+    I would say retry the function call with validated inputs.
+    It could say that there is no change, or that there is not enough balance to make the purchase
+
+
+When is void the right return type for a register helper?
+    When there is nothing to display/be used from it, or when the value of a variable is reassigned in that function through a pointer.
+
+How does price_span communicate three pieces of information (ok/fail, min, max)?
+    By reassigning the values of variables through pointers (ex: min and max), while returning the others (ex: ok/fail)
+
+What is undefined behavior if a non-void function falls off the end without a return?
+    The return value register may contain a garbage value, randomly.
+
+
+Why commit the header before (or separately from) a huge unfinished cafe.c?
+    The other files (ex: cafe.c) will need to access the header file, however far along the .c file is in development.
+
+What is one file that should stay out of Git for this project, and why?
+    The .exe, because of how large it is.
