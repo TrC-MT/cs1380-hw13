@@ -28,6 +28,10 @@ What is undefined behavior if a non-void function falls off the end without a re
 
 Why commit the header before (or separately from) a huge unfinished cafe.c?
     The other files (ex: cafe.c) will need to access the header file, however far along the .c file is in development.
+    I asked AI this question now. Summarizing and paraphrasing it said that it establishes the interface before implementation is complete, and contains definitions of how other files will use the library.
+    It creates a checkpoint documenting the inteded design.
 
 What is one file that should stay out of Git for this project, and why?
     The .exe, because of how large it is.
+    I also just asked AI this one. (Again, I'm learning how to use AI as well.)
+    It also said the .exe, yet because it can be recreated at any time. I was correct in that it also said to avoid bloat.
